@@ -56,7 +56,7 @@ def write_data(df: DataFrame) -> None:
     """
     # 1. Подготовка данных: отбрасываем строки без температуры и создаем список кортежей
     data_to_insert = [
-        (index.to_pydatetime(), row['temp'])
+        (index.to_pydatetime(), float(row['temp'])) # <--- ИЗМЕНЕНИЕ ЗДЕСЬ
         for index, row in df.dropna(subset=['temp']).iterrows()
     ]
 

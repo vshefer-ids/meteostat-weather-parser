@@ -1,9 +1,11 @@
 version: '3.8'
 
 services:
-  app:
+  # Даем сервису понятное имя
+  weather-parser:
     build: .
     container_name: meteostat_parser
     env_file:
       - .env
-    restart: always
+    # Используем более предсказуемую политику перезапуска
+    restart: unless-stopped
