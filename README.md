@@ -39,6 +39,13 @@ Bash
 
 git clone [https://github.com/vshefer-ids/meteostat-weather-parser.git](https://github.com/vshefer-ids/meteostat-weather-parser.git)
 cd meteostat-weather-parser
+
+Либо воспользуйтесь образом с DockerHub
+https://hub.docker.com/repository/docker/viktorshefer/meteostat-parser/general
+
+Образ:
+viktorshefer/meteostat-parser:latest
+
 4. Конфигурация
 Создайте файл .env, скопировав шаблон .env.example, и заполните его вашими данными:
 
