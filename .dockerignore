@@ -1,0 +1,11 @@
+.git
+.gitignore
+.dockerignore
+.idea/
+.vscode/
+venv/
+__pycache__/
+*.pyc
+
+# Исключаем локальные файлы, которые не нужны внутри контейнера
+.env

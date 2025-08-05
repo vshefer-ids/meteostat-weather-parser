@@ -1,0 +1,19 @@
+# Файлы окружения (содержат секреты)
+.env
+.env.production
+.env.local
+
+# Виртуальные окружения Python
+venv/
+.venv/
+env/
+__pycache__/
+
+# Файлы IDE и ОС
+.idea/
+.vscode/
+*.pyc
+.DS_Store
+
+#Служебные модули
+project_analyzer.py
